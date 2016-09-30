@@ -3,6 +3,6 @@
 const React = require('react');
 
 const SearchField = props =>
-  <input className="search-field" {...props} />
+  <input />
 
 module.exports = SearchField;
