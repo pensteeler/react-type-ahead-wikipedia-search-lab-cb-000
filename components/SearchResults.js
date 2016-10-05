@@ -2,7 +2,7 @@
 
 const React = require('react');
 
-const SearchResults = ({ results }) =>
+const SearchResults = ({ results }) => (
   <ul className="search-results">
     {
       results.map(({ title, description, link }, i) => (
@@ -13,5 +13,6 @@ const SearchResults = ({ results }) =>
       ))
     }
   </ul>
+);
 
 module.exports = SearchResults;
