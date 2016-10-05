@@ -2,7 +2,8 @@
 
 const React = require('react');
 
-const SearchResults = ({ results }) =>
+const SearchResults = ({ results }) => (
   <ul />
+);
 
 module.exports = SearchResults;

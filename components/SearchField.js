@@ -2,7 +2,8 @@
 
 const React = require('react');
 
-const SearchField = props =>
+const SearchField = props => (
   <input />
+);
 
 module.exports = SearchField;
