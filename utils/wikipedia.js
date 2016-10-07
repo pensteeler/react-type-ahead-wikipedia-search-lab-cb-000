@@ -1,5 +1,10 @@
 'use strict';
 
+// This is a tiny wrapper around the Wikipedia Search API. We can't use the
+// browser's native #fetch() function here, since only JSONP can be used in
+// order to circumvent CORS issues here.
+// The search API is documented here: https://www.mediawiki.org/wiki/API:Search
+
 const jsonp = require('jsonp');
 
 const wikipedia = {
