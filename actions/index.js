@@ -2,13 +2,22 @@
 
 const jsonp = require('jsonp');
 const resultStore = require('../stores/resultStore');
-
-// Wikipedia search API
-const baseUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&format=json';
+const wikipedia = require('../utils/wikipedia');
 
 const search = (query) => {
-  jsonp(`${baseUrl}&search=${query}`, (err, data) => {
-    const results = [];
+  const requested = new Date();
+
+  return wikipedia.search(query).then((data) => {
+    if (resultStore.isOutdated(requested)) {
+      return;
+    }
+
+    const [query, titles, descriptions, links] = data;
+    const results = titles.map((title, i) => ({
+      title,
+      description: descriptions[i],
+      link: links[i],
+    }));
 
     resultStore.setState({
       results,
