@@ -2,8 +2,12 @@
 
 const React = require('react');
 
-const SearchField = props => (
-  <input />
-);
+class SearchField extends React.Component {
+  render(){
+    return(
+      <input />
+    )
+  }
+}
 
 module.exports = SearchField;
