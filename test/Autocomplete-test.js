@@ -68,7 +68,7 @@ describe('<Autocomplete />', function() {
     expect(wrapper.type()).toBe('div');
   });
 
-  it('should have class .search-field', function() {
+  it('should have class .autocomplete', function() {
     const wrapper = shallow(<Autocomplete />);
     expect(wrapper.hasClass('autocomplete')).toBe(true);
   });

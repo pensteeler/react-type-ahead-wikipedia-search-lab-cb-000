@@ -45,7 +45,7 @@ describe('actions', function() {
       sandbox.stub(resultStore, 'setState');
 
       return actions.search('test').then(() => {
-        sinon.assert.calledOnce(resultStore.isOutdated);
+        sinon.assert.called(resultStore.isOutdated);
         sinon.assert.calledWithExactly(resultStore.isOutdated, new Date());
         sinon.assert.notCalled(resultStore.setState);
       });
