@@ -2,12 +2,8 @@
 
 const React = require('react');
 
-class SearchField extends React.Component {
-  render(){
-    return(
-      <input />
-    )
-  }
-}
+const SearchField = props => (
+  <input />
+);
 
 module.exports = SearchField;
