@@ -3,7 +3,8 @@
 const React = require('react');
 
 const SearchResults = ({ results }) => (
-  <ul />
+  <ul>
+  </ul>
 );
 
 module.exports = SearchResults;
