@@ -2,14 +2,8 @@
 
 const React = require('react');
 
-class SearchResults extends React.Component {
-  render(){
-    return(
-      <ul>
-        
-      </ul>
-    )
-  }
-}
+const SearchResults = ({ results }) => (
+  <ul />
+);
 
 module.exports = SearchResults;
