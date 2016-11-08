@@ -7,7 +7,7 @@ const sinon = require('sinon');
 const SearchResults = require('../components/SearchResults');
 
 describe('<SearchResults />', function() {
-  it('should render an <ul />', function() {
+  it('should render an <ul>', function() {
     const wrapper = shallow(<SearchResults results={[]} />);
     expect(wrapper.type()).toBe('ul');
   });
@@ -17,7 +17,7 @@ describe('<SearchResults />', function() {
     expect(wrapper.hasClass('search-results')).toBe(true);
   });
 
-  it('should render <li /> for each result', function() {
+  it('should render <li> for each result', function() {
     const results = [{}, {}, {}];
     const wrapper = shallow(<SearchResults results={results} />);
     expect(wrapper.children().length).toBe(3);
