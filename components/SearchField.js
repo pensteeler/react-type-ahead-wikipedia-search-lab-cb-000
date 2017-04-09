@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react');
+import React from 'react';
 
 const SearchField = props => (
   <input />
 );
 
-module.exports = SearchField;
+export default SearchField;

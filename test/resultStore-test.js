@@ -1,9 +1,9 @@
 'use strict';
 
-const sinon = require('sinon');
-const resultStore = require('../stores/resultStore');
+import sinon from 'sinon';
+import resultStore from '../stores/resultStore';
 const ResultStore = resultStore.constructor;
-const Store = require('../stores/Store');
+import Store from '../stores/Store';
 
 describe('resultStore', function() {
   it('should be an object', function() {

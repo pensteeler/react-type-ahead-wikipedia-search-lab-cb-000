@@ -1,8 +1,10 @@
 'use strict';
 
-const Store = require('./Store');
+import Store from './Store';
 
 class ResultStore {
 }
 
-module.exports = new ResultStore();
+const resultStore = new ResultStore();
+
+export default resultStore;

@@ -5,7 +5,7 @@
 // order to circumvent CORS issues here.
 // The search API is documented here: https://www.mediawiki.org/wiki/API:Search
 
-const jsonp = require('jsonp');
+import jsonp from 'jsonp';
 
 const wikipedia = {
   baseUrl: 'http://en.wikipedia.org/w/api.php?action=opensearch&format=json',
@@ -21,4 +21,4 @@ const wikipedia = {
     })
 };
 
-module.exports = wikipedia;
+export default wikipedia;

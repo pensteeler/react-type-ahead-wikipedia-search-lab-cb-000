@@ -1,8 +1,8 @@
 require('./test/index-test.js');
 
-const Autocomplete = require('./components/Autocomplete');
-const React = require('react');
-const ReactDOM = require('react-dom');
+import Autocomplete from './components/Autocomplete';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const $main = document.getElementById('main');
 ReactDOM.render(<Autocomplete />, $main);

@@ -1,10 +1,10 @@
 'use strict';
 
-const React = require('react');
-const { shallow } = require('enzyme');
-const sinon = require('sinon');
+import React from 'react';
+import { shallow } from 'enzyme';
+import sinon from 'sinon';
 
-const SearchResults = require('../components/SearchResults');
+import SearchResults from '../components/SearchResults';
 
 describe('<SearchResults />', function() {
   it('should render an <ul>', function() {

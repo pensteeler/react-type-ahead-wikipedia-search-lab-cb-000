@@ -1,10 +1,10 @@
 'use strict'
 
-const React = require('react');
+import React from 'react';
 
 const SearchResults = ({ results }) => (
   <ul>
   </ul>
 );
 
-module.exports = SearchResults;
+export default SearchResults;

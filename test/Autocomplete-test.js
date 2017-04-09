@@ -1,15 +1,15 @@
 'use strict';
 
-const React = require('react');
-const { shallow, mount } = require('enzyme');
-const sinon = require('sinon');
+import React from 'react';
+import { shallow, mount } from 'enzyme';
+import sinon from 'sinon';
 
-const actions = require('../actions');
-const resultStore = require('../stores/resultStore');
-const Autocomplete = require('../components/Autocomplete');
+import actions from '../actions';
+import resultStore from '../stores/resultStore';
+import Autocomplete from '../components/Autocomplete';
 
-const SearchField = require('../components/SearchField');
-const SearchResults = require('../components/SearchResults');
+import SearchField from '../components/SearchField';
+import SearchResults from '../components/SearchResults';
 
 describe('<Autocomplete />', function() {
   const sandbox = sinon.sandbox.create();
