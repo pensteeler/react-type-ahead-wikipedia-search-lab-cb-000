@@ -1,10 +1,10 @@
 'use strict';
 
-const sinon = require('sinon');
+import sinon from 'sinon';
 
-const actions = require('../actions');
-const resultStore = require('../stores/resultStore');
-const wikipedia = require('../utils/wikipedia');
+import actions from '../actions';
+import resultStore from '../stores/resultStore';
+import wikipedia from '../utils/wikipedia';
 
 describe('actions', function() {
   const sandbox = sinon.sandbox.create();

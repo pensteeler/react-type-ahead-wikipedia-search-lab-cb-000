@@ -1,13 +1,13 @@
 'use strict'
 
-const React = require('react');
-const actions = require('../actions');
-const resultStore = require('../stores/resultStore');
+import React from 'react';
+import actions from '../actions';
+import resultStore from '../stores/resultStore';
 
-const SearchField = require('./SearchField');
-const SearchResults = require('./SearchResults');
+import SearchField from './SearchField';
+import SearchResults from './SearchResults';
 
-class Autocomplete extends React.Component {
+export default class Autocomplete extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,5 +49,3 @@ class Autocomplete extends React.Component {
     );
   }
 }
-
-module.exports = Autocomplete;

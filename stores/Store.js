@@ -1,6 +1,6 @@
 'use strict';
 
-class Store {
+export default class Store {
   constructor(initialState) {
     this.state = initialState;
     this.listeners = [];
@@ -26,5 +26,3 @@ class Store {
     return this.state;
   }
 }
-
-module.exports = Store;

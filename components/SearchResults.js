@@ -1,6 +1,6 @@
 'use strict'
 
-const React = require('react');
+import React from 'react';
 
 const SearchResults = ({ results }) => (
   <ul className="search-results">
@@ -15,4 +15,4 @@ const SearchResults = ({ results }) => (
   </ul>
 );
 
-module.exports = SearchResults;
+export default SearchResults;

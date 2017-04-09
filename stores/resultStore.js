@@ -1,6 +1,6 @@
 'use strict';
 
-const Store = require('./Store');
+import Store from './Store';
 
 class ResultStore extends Store {
   isOutdated(updated) {
@@ -8,7 +8,9 @@ class ResultStore extends Store {
   }
 }
 
-module.exports = new ResultStore({
+const resultStore = new ResultStore({
   results: [],
   updated: new Date(),
 });
+
+export default resultStore;
