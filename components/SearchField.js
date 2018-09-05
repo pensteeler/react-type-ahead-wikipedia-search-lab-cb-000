@@ -3,7 +3,7 @@
 import React from 'react';
 
 const SearchField = props => (
-  <input />
+  <input {...props}/>
 );
 
 export default SearchField;
