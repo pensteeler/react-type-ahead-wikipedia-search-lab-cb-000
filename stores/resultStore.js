@@ -8,6 +8,6 @@ class ResultStore {
   }
 }
 
-const resultStore = new ResultStore();
+const resultStore = new ResultStore({});
 
 export default resultStore;
