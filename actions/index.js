@@ -9,6 +9,7 @@ const search = (query) => {
 
   return wikipedia.search(query).then((data) => {
     // TODO
+    
   });
 };
 
